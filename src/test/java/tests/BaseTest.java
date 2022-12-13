@@ -16,7 +16,7 @@ public class BaseTest {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        System.out.println("Title: " + driver.getTitle());
+//        System.out.println("Title: " + driver.getTitle());
     }
 
     @AfterClass
