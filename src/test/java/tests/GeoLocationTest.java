@@ -1,6 +1,5 @@
 package tests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -20,7 +19,6 @@ public class GeoLocationTest {
 
     @BeforeClass
     public void setUp() {
-        WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         driver.manage().window().maximize();
     }

@@ -1,6 +1,5 @@
 package tests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Optional;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v107.network.Network;
@@ -26,7 +25,6 @@ public class NetworkConditionsTest {
     // I
     @BeforeClass
     public void setUp() {
-        WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         devTools = driver.getDevTools();
         driver.get("https://RexJones2.com");
